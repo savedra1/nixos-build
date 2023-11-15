@@ -105,8 +105,8 @@ in
   gtk = {
     enable = true;
     theme = {
-      name = "rose-pine-dawn";
-      package = pkgs.rose-pine-gtk-theme;
+      name = "Nordic";
+      package = pkgs.adwaita-qt;
     };
   };
 
