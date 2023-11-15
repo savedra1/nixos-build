@@ -21,7 +21,7 @@
     input {
         kb_layout = us                  # Keyboard layout
         touchpad {
-            natural_scroll = false      # Touchpad natural scroll
+            natural_scroll = true      # Touchpad natural scroll
             clickfinger_behavior = 1    # Click finger behavior
         }
         follow_mouse = 0                # Disable focus change on hover
