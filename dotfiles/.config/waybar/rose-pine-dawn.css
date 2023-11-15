@@ -1,23 +1,23 @@
 /*
-* Variant: Rosé Pine Dawn
+* Variant: Nordic Theme
 * Maintainer: DankChoir
 */
 
-@define-color base rgba(250, 244, 237, 1);
-@define-color surface rgba(255, 250, 243, 1);
-@define-color overlay rgba(242, 233, 225, 1);
+@define-color base rgba(46, 52, 64, 1);
+@define-color surface rgba(67, 76, 94, 1);
+@define-color overlay rgba(67, 76, 94, 1);
 
-@define-color muted #9893a5;
-@define-color subtle #797593;
-@define-color text #575279;
+@define-color muted #4C566A;
+@define-color subtle #5E81AC;
+@define-color text #E5E9F0;
 
-@define-color love #b4637a;
-@define-color gold #ea9d34;
-@define-color rose #d7827e;
-@define-color pine #286983;
-@define-color foam #56949f;
-@define-color iris #907aa9;
+@define-color love #BF616A;
+@define-color gold #D08770;
+@define-color rose #8FBCBB;
+@define-color pine #88C0D0;
+@define-color foam #81A1C1;
+@define-color iris #B48EAD;
 
-@define-color highlightLow rgba(244, 237, 232, 1);
-@define-color highlightMed rgba(223, 218, 217, 1);
-@define-color highlightHigh rgba(206, 202, 205, 1);
+@define-color highlightLow rgba(94, 129, 172, 1);
+@define-color highlightMed rgba(90, 120, 143, 1);
+@define-color highlightHigh rgba(76, 94, 116, 1);

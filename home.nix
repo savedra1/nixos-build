@@ -106,7 +106,7 @@ in
     enable = true;
     theme = {
       name = "Nordic";
-      package = pkgs.adwaita-qt;
+      package = pkgs.nordic;
     };
   };
 

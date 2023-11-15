@@ -45,6 +45,18 @@
         disable_splash_rendering = true # Disable splash rendering
         mouse_move_focuses_monitor = false # Disable move monitor focus with mouse
     }
+    
+    # Window Rules
+    windowrulev2 = opacity 0.7 0.7,title:^(Volume Control)$
+    windowrulev2 = opacity 0.8 0.8,title:^(Bluetooth Devices)$
+    windowrulev2 = opacity 0.8 0.8,title:^(wdisplays)$
+    windowrulev2 = opacity 0.7 0.7,class:^(google-chrome)$
+    windowrulev2 = opacity 0.9 0.9,class:^(emacs)$
+    windowrulev2 = opacity 0.7 0.7,class:^(Slack)$
+    windowrulev2 = opacity 0.7 0.6,class:^(insomnia)$
+    windowrulev2 = opacity 0.8 0.8,class:^(pavucontrol)$
+    windowrulev2 = opacity 0.7 0.7,class:^(code)$
+    windowrulev2 = opacity 0.8 0.8,class:^(docker-compose)$
 
     # Decoration Configuration
     decoration {
@@ -92,9 +104,9 @@
     
     # System Control Bindings
     bind = $mainMod_SHIFT, C, exec, hyprctl reload && pkill waybar && nohup waybar > /dev/null 2>&1 & pkill mako && nohup mako > /dev/null 2>&1 &
- # Reload system config
+    # Reload system config
     bind = $mainMod_SHIFT, Q, killactive           # Kill active window
-    bind = $mainMod, ESCAPE, exec, swaylock --clock --image //home/lukecollins/Pictures/screensaver.jpg # Lock screen
+    bind = $mainMod, ESCAPE, exec, swaylock --clock --screenshots --effect-blur 7x5 # Lock screen
     bind = $mainMod, BACKSPACE, hy3:makegroup, opposite, ephemeral # Toggle split
     bind = $mainMod_SHIFT, E, exit                 # Exit system
 

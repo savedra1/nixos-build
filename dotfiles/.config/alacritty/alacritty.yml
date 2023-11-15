@@ -1,44 +1,47 @@
+window:
+  opacity: 0.70
+
 colors:
   primary:
-    background: "0xfaf4ed"
-    foreground: "0x575279"
+    background: "0x2e3440"
+    foreground: "0xe5e9f0"
   cursor:
-    text: "0x575279"
+    text: "0xe5e9f0"
     cursor: "0xcecacd"
   vi_mode_cursor:
-    text: "0x575279"
+    text: "0xe5e9f0"
     cursor: "0xcecacd"
   line_indicator:
     foreground: None
     background: None
   selection:
-    text: "0x575279"
-    background: "0xdfdad9"
+    text: "0xe5e9f0"
+    background: "0x5e81ac"
   normal:
-    black: "0xf2e9e1"
-    red: "0xb4637a"
-    green: "0x286983"
-    yellow: "0xea9d34"
-    blue: "0x56949f"
-    magenta: "0x907aa9"
-    cyan: "0xd7827e"
-    white: "0x575279"
+    black: "0x4c566a"
+    red: "0xbf616a"
+    green: "0x88c0d0"
+    yellow: "0xd08770"
+    blue: "0x81a1c1"
+    magenta: "0xb48ead"
+    cyan: "0x8fbcbb"
+    white: "0xe5e9f0"
   bright:
-    black: "0x9893a5"
-    red: "0xb4637a"
-    green: "0x286983"
-    yellow: "0xea9d34"
-    blue: "0x56949f"
-    magenta: "0x907aa9"
-    cyan: "0xd7827e"
-    white: "0x575279"
+    black: "0x4c566a"
+    red: "0xbf616a"
+    green: "0x88c0d0"
+    yellow: "0xd08770"
+    blue: "0x81a1c1"
+    magenta: "0xb48ead"
+    cyan: "0x8fbcbb"
+    white: "0xe5e9f0"
   hints:
     start:
-      foreground: "#797593"
-      background: "#fffaf3"
+      foreground: "#5e81ac"
+      background: "#2e3440"
     end:
-      foreground: "#9893a5"
-      background: "#fffaf3"
+      foreground: "#4c566a"
+      background: "#2e3440"
 
 font:
   normal:
