@@ -55,7 +55,7 @@
     windowrulev2 = opacity 0.7 0.7,class:^(Slack)$
     windowrulev2 = opacity 0.7 0.6,class:^(insomnia)$
     windowrulev2 = opacity 0.8 0.8,class:^(pavucontrol)$
-    windowrulev2 = opacity 0.7 0.7,class:^(code)$
+    windowrulev2 = opacity 0.7 0.7,class:^(Code)$
     windowrulev2 = opacity 0.8 0.8,class:^(docker-compose)$
 
     # Decoration Configuration

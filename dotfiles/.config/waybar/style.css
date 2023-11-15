@@ -36,7 +36,7 @@
 /* Clock styling */
 #clock {
     padding: 0 5px;
-    color: @love;
+    color: @pine;
 }
 
 /* Network styling */
@@ -52,13 +52,13 @@
 /* Workspaces styling */
 #workspaces button {
     color: @pine;
-    background-color: @highlightLow;
+    background-color: @unselectedBackground;
     padding: 2px 10px;
 }
 
 #workspaces button.active {
     color: @rose;
-    background-color: @pine;
+    background-color: @selectedBackground;
 }
 
 #workspaces button.urgent {
