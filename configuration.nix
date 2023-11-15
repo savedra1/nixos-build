@@ -70,7 +70,7 @@ in
     nodejs python3 python3Packages.pip shellcheck wdisplays git blueman brightnessctl hyprpaper
     home-manager pavucontrol alsa-utils grim bluez vscode gnome.gnome-boxes shfmt mako slurp 
     wl-clipboard unzip statix nixpkgs-fmt neofetch rofi-wayland libnotify waybar htop postgresql
-    insomnia docker-compose tailscale vscode slack xorg.xprop 
+    insomnia docker-compose tailscale vscode slack xorg.xprop xorg.xorgserver
     (emacsWithPackagesFromUsePackage {
       config = ./emacs/init.el;
       defaultInitFile = true;

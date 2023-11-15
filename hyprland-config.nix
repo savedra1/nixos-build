@@ -169,6 +169,9 @@
     # Lid switch event
     bindl=,switch:Lid Switch,exec,swaylock --clock --image //home/lukecollins/Pictures/screensaver.jpg # Lock screen 
 
+    # Full screen a windo
+    bind=SUPER,F,fullscreen
+
     # Resize window & move floating window
     bindm = $mainMod, mouse:272, resizewindow
     bindm = CTRL, mouse:273, movewindow
