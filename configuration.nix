@@ -125,9 +125,7 @@ in
     networkmanager.enable = true; # Enable NetworkManager for network management
     hosts = { # Hosts file configurations
       "127.0.0.1" = [
-      "facebook.com" "news.google.com" "old.reddit.com" "reddit.com" "theguardian.com"
-      "youtube.com" "www.facebook.com" "www.reddit.com" "www.theguardian.com"
-      "www.youtube.com" "bbc.co.uk" "www.bbc.co.uk" "www.neowin.net" "neowin.net"
+      "neowin.net"
       ];
     };
     firewall.enable = false; # Disable the firewall
