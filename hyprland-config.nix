@@ -167,7 +167,7 @@
     bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
     # Lid switch event
-    bindl=,switch:Lid Switch,exec,swaylock --clock --image //home/lukecollins/Pictures/screensaver.jpg # Lock screen 
+    # bindl=,switch:Lid Switch,exec,swaylock --clock --image //home/lukecollins/Pictures/screensaver.jpg # Lock screen 
 
     # Full screen a windo
     bind=SUPER,F,fullscreen
