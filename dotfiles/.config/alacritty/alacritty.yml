@@ -1,6 +1,16 @@
 window:
   opacity: 0.70
 
+key_bindings:
+  - { key: Right, mods: Control, chars: "\x1BF" } # Skip word right
+  - { key: Left,  mods: Control, chars: "\x1BB" } # Skip word left
+
+  - { key: S, mods: Control, chars: "sudo " } # sudo
+  - { key: P, mods: Control, chars: "chmod rwx+ " } # change file permission
+
+  - { key: Back, mods: Control, chars: "\x1b\x7f" } # delete last word
+  - { key: Back, mods: Shift, chars: "\x15" } # delete line
+  
 colors:
   primary:
     background: "0x2e3440"
