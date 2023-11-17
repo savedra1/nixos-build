@@ -53,10 +53,10 @@
     windowrulev2 = opacity 0.7 0.7,class:^(google-chrome)$
     windowrulev2 = opacity 0.9 0.9,class:^(emacs)$
     windowrulev2 = opacity 0.7 0.7,class:^(Slack)$
-    windowrulev2 = opacity 0.7 0.6,class:^(insomnia)$
     windowrulev2 = opacity 0.8 0.8,class:^(pavucontrol)$
     windowrulev2 = opacity 0.7 0.7,class:^(Code)$
     windowrulev2 = opacity 0.8 0.8,class:^(docker-compose)$
+    windowrulev2 = opacity 0.7 0.7,class:^(Insomnia)$
 
     # Decoration Configuration
     decoration {

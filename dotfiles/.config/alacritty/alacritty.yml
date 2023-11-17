@@ -10,6 +10,7 @@ key_bindings:
 
   - { key: Back, mods: Control, chars: "\x1b\x7f" } # delete last word
   - { key: Back, mods: Shift, chars: "\x15" } # delete line
+
   
 colors:
   primary:
