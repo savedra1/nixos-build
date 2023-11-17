@@ -42,6 +42,10 @@ alias flake-update='sudo nix flake update --extra-experimental-features nix-comm
 # NixOS clean
 alias nixos-clean='sudo nix-env --delete-generations old -p /nix/var/nix/profiles/system && sudo nix-collect-garbage -d && flake-build'
 
+# Forti commands
+alias run-forti='sudo openfortivpn -c /home/michael/.config/vpn --username=ovoenergy/michael.savedra --pppd-accept-remote'
+alias kill-forti='pkill openfortivpn'
+
 # ===============
 # Miscellaneous Configurations
 # ===============
