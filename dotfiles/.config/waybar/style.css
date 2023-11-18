@@ -35,6 +35,10 @@ window#waybar.hidden {
     font-size: 16px;
 }
 
+#workspaces button.urgent {
+    color: #c54626; 
+}
+
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     transition: none;
@@ -73,7 +77,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
+    color: #b4a5a5;
     background: #383c4a;
 }
 
