@@ -24,14 +24,14 @@ window#waybar.hidden {
 
 #workspaces button {
     transition: none;
-    color: #7c818c;
+    color: #dbdee6;
     background: transparent;
     padding: 5px;
     font-size: 16px;
 }
 
 #workspaces button.persistent {
-    color: #7c818c;
+    color: #c6cbd6;
     font-size: 16px;
 }
 
@@ -84,7 +84,7 @@ window#waybar.hidden {
 #clock {
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
     transition: none;
     color: #ffffff;
     background: #383c4a;
@@ -176,6 +176,12 @@ window#waybar.hidden {
     transition: none;
     color: #ffffff;
     background: #383c4a;
+}
+
+#album-art {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
 }
 
 @keyframes blink {

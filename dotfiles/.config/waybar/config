@@ -8,8 +8,8 @@
     // "height": 24,
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock", "image#album-art"],
+    "modules-left": ["hyprland/workspaces", "image#album-art"],
+    "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "backlight", "battery", "network"],
 
 
@@ -121,6 +121,6 @@
         "path": "/home/michael/Pictures/nix-logo.png",
         "size": 32,
         "interval": 5,
-        "on-click": "mpc toggle"
+        "on-click": "code /home/michael/nixos-build"
     }
 }
