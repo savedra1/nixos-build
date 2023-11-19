@@ -24,7 +24,7 @@ window#waybar.hidden {
 
 #workspaces button {
     transition: none;
-    color: #dbdee6;
+    color: #ffffff;
     background: transparent;
     padding: 5px;
     font-size: 16px;
@@ -176,6 +176,10 @@ window#waybar.hidden {
     transition: none;
     color: #ffffff;
     background: #383c4a;
+}
+
+#network.format-disconncted {
+    background-color: #ffbe61;
 }
 
 #album-art {
