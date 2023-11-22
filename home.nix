@@ -42,14 +42,10 @@ let
     '';
   };
 
-  # Emacs Copilot and Powerlevel10k Installation Definitions
+  # Powerlevel10k Installation Definitions
   powerlevel10kSrc = builtins.fetchGit {
     url = "https://github.com/romkatv/powerlevel10k.git";
     rev = "017395a266aa15011c09e64e44a1c98ed91c478c";
-  };
-  emacsCopilotSrc = builtins.fetchGit {
-    url = "https://github.com/zerolfx/copilot.el.git";
-    rev = "421703f5dd5218ec2a3aa23ddf09d5f13e5014c2";
   };
 
   # MesloLGS NF Font Definitions
@@ -146,7 +142,6 @@ in
     ".local/share/applications/reboot.desktop".source = ./dotfiles/.local/share/applications/reboot.desktop;
     ".local/share/applications/logout.desktop".source = ./dotfiles/.local/share/applications/logout.desktop;
     "/powerlevel10k".source = powerlevel10kSrc;
-    ".emacsCopilot".source = emacsCopilotSrc;
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Regular.ttf".source = mesloLGSFonts.Regular;
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Bold.ttf".source = mesloLGSFonts.Bold;
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Italic.ttf".source = mesloLGSFonts.Italic;
