@@ -23,6 +23,7 @@ The repository includes a `user-config.nix` file that has been set up with my us
   homeDirectory = "/home/yourUsername";  # Adjust the path accordingly
 }
 ```
+The information contained in hardware-configuration.nix will also need to be replaced with the information in the default hardware info file to ensure the serial numbers and metadata match up.
 
 ## Flake Build Commands
 
