@@ -18,10 +18,7 @@
     //***************************
 
     "hyprland/workspaces": {
-        "disable-scroll": true,
-        "persistent_workspaces": {
-            "1": []
-        },
+        "disable-scroll": true
     },
 
     "hyprland/language": {
