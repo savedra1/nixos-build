@@ -46,6 +46,9 @@ alias nixos-clean='sudo nix-env --delete-generations old -p /nix/var/nix/profile
 alias run-forti='sudo openfortivpn -c /home/michael/.config/vpn --username=ovoenergy/michael.savedra --pppd-accept-remote'
 alias kill-forti='pkill openfortivpn'
 
+# Detailed ls
+alias ls='lsd'
+
 # ===============
 # Miscellaneous Configurations
 # ===============
