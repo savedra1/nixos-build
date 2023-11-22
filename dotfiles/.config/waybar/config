@@ -8,8 +8,8 @@
     // "height": 24,
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "image#album-art"],
-    "modules-center": ["clock"],
+    "modules-left": ["clock", "hyprland/workspaces", "image#album-art"],
+    "modules-center": [],
     "modules-right": ["pulseaudio", "backlight", "battery", "network"],
 
 
@@ -45,7 +45,7 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%a, %d %b, %I:%M %p}"
+        "format": "{:%d/%m | %H:%M}"
     },
 
     "pulseaudio": {

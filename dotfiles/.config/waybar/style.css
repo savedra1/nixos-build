@@ -17,9 +17,12 @@ window#waybar.hidden {
 
 #workspaces {
     margin-right: 8px;
+    margin-left: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    background: #4C566A;
+    background: #434C5E;
 }
 
 #workspaces button {
@@ -27,11 +30,6 @@ window#waybar.hidden {
     color: #ffffff;
     background: transparent;
     padding: 5px;
-    font-size: 16px;
-}
-
-#workspaces button.persistent {
-    color: #c6cbd6;
     font-size: 16px;
 }
 
@@ -86,8 +84,8 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #4C566A;
+    color: #000000;
+    background: #5E81AC;
 }
 
 #pulseaudio {
@@ -136,7 +134,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #000000;
-    background: #5E81AC;
+    background: #8FBCBB;
 }
 
 #battery.charging {

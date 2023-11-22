@@ -136,6 +136,7 @@ in
     ".config/waybar/config".source = ./dotfiles/.config/waybar/config;
     ".config/waybar/style.css".source = ./dotfiles/.config/waybar/style.css;
     ".config/waybar/rose-pine-dawn.css".source = ./dotfiles/.config/waybar/rose-pine-dawn.css;
+    
     ".zshrc".source = ./dotfiles/.zshrc;
     ".p10k.zsh".source = ./dotfiles/.p10k.zsh;
     ".local/share/applications/shutdown.desktop".source = ./dotfiles/.local/share/applications/shutdown.desktop;

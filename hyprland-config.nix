@@ -21,7 +21,7 @@
     input {
         kb_layout = us                  # Keyboard layout
         touchpad {
-            natural_scroll = true      # Touchpad natural scroll
+            natural_scroll = true       # Touchpad natural scroll
             clickfinger_behavior = 1    # Click finger behavior
         }
         follow_mouse = 0                # Disable focus change on hover
@@ -30,9 +30,9 @@
 
     # General Configuration
     general {
-        gaps_in = 7                     # Inner gaps
-        gaps_out = 10                   # Outer gaps
-        border_size = 3                 # Border size
+        gaps_in = 6              # Inner gaps
+        gaps_out = 7             # Outer gaps
+        border_size = 3          # Border size
         col.active_border = rgba(5289E2ee) rgba(6897BBee) 45deg # Active border color
         col.inactive_border = rgba(595959aa) # Inactive border color
         layout = hy3                    # Layout type
