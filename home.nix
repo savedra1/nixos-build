@@ -143,7 +143,10 @@ in
 
     ".config/helix/themes/nord.toml".source = ./dotfiles/.config/helix/themes/nord.toml;
     ".config/helix/config.toml".source = ./dotfiles/.config/helix/config.toml;
-    
+
+    ".config/lsd/config.yml".source = ./dotfiles/.config/lsd/config.yml;
+    ".config/lsd/icons.yml".source = ./dotfiles/.config/lsd/icons.yml;
+
     ".zshrc".source = ./dotfiles/.zshrc;
     ".p10k.zsh".source = ./dotfiles/.p10k.zsh;
 
