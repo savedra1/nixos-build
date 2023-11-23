@@ -129,23 +129,30 @@ in
   home.file = {
     ".config/rofi/config.rasi".source = ./dotfiles/.config/rofi/config.rasi;
     ".config/rofi/nord.rasi".source = ./dotfiles/.config/rofi/nord.rasi;
+
     ".config/alacritty/alacritty.yml".source = ./dotfiles/.config/alacritty/alacritty.yml;
+
     ".config/swappy/config".source = ./dotfiles/.config/swappy/config;
+
     ".config/hypr/hyprpaper.conf".source = ./dotfiles/.config/hypr/hyprpaper.conf;
+
     ".config/mako/config".source = ./dotfiles/.config/mako/config;
+
     ".config/waybar/config".source = ./dotfiles/.config/waybar/config;
     ".config/waybar/style.css".source = ./dotfiles/.config/waybar/style.css;
-    ".config/waybar/rose-pine-dawn.css".source = ./dotfiles/.config/waybar/rose-pine-dawn.css;
 
     ".config/helix/themes/nord.toml".source = ./dotfiles/.config/helix/themes/nord.toml;
     ".config/helix/config.toml".source = ./dotfiles/.config/helix/config.toml;
     
     ".zshrc".source = ./dotfiles/.zshrc;
     ".p10k.zsh".source = ./dotfiles/.p10k.zsh;
+
     ".local/share/applications/shutdown.desktop".source = ./dotfiles/.local/share/applications/shutdown.desktop;
     ".local/share/applications/reboot.desktop".source = ./dotfiles/.local/share/applications/reboot.desktop;
     ".local/share/applications/logout.desktop".source = ./dotfiles/.local/share/applications/logout.desktop;
+    
     "/powerlevel10k".source = powerlevel10kSrc;
+
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Regular.ttf".source = mesloLGSFonts.Regular;
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Bold.ttf".source = mesloLGSFonts.Bold;
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Italic.ttf".source = mesloLGSFonts.Italic;
