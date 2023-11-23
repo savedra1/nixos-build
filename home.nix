@@ -128,7 +128,7 @@ in
   # Home File Definitions
   home.file = {
     ".config/rofi/config.rasi".source = ./dotfiles/.config/rofi/config.rasi;
-    ".config/rofi/rose-pine-dawn.rasi".source = ./dotfiles/.config/rofi/rose-pine-dawn.rasi;
+    ".config/rofi/nord.rasi".source = ./dotfiles/.config/rofi/nord.rasi;
     ".config/alacritty/alacritty.yml".source = ./dotfiles/.config/alacritty/alacritty.yml;
     ".config/swappy/config".source = ./dotfiles/.config/swappy/config;
     ".config/hypr/hyprpaper.conf".source = ./dotfiles/.config/hypr/hyprpaper.conf;
