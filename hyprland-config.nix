@@ -57,6 +57,8 @@
     windowrulev2 = opacity 0.7 0.7,class:^(Code)$
     windowrulev2 = opacity 0.8 0.8,class:^(docker-compose)$
     windowrulev2 = opacity 0.7 0.7,class:^(Insomnia)$
+    windowrulev2 = opacity 0.7 0.7,class:^(helix)$
+
 
     # Decoration Configuration
     decoration {
@@ -118,7 +120,7 @@
     bind = $mainMod, W, exec, alacritty -e sh -c 'sleep 0.1; nmtui' # Open network manager
     bind = $mainMod, D, exec, wdisplays            # Display settings
     bind = $mainMod, B, exec, blueman-manager      # Bluetooth manager
-    bind = $mainMod_SHIFT, RETURN, exec, google-chrome
+    bind = $mainMod_SHIFT, RETURN, exec, google-chrome-stable # Launch Chrome
     
     # Audio Control Bindings
     bind = , XF86AudioRaiseVolume, exec, amixer sset Master unmute; exec amixer sset Master 5%+ | sed -En 's/.*\[([0-9]+)%\].*/\1/p' | head -1 > $XDG_RUNTIME_DIR/wob.sock
@@ -169,7 +171,7 @@
     bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
     # Lid switch event
-    # bindl=,switch:Lid Switch,exec,swaylock --clock --image //home/lukecollins/Pictures/screensaver.jpg # Lock screen 
+    # bindl=,switch:Lid Switch,exec,swaylock --clock --image //home/michael/Pictures/screensaver.jpg # Lock screen 
 
     # Full screen a windo
     bind=SUPER,F,fullscreen
