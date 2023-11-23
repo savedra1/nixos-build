@@ -136,6 +136,9 @@ in
     ".config/waybar/config".source = ./dotfiles/.config/waybar/config;
     ".config/waybar/style.css".source = ./dotfiles/.config/waybar/style.css;
     ".config/waybar/rose-pine-dawn.css".source = ./dotfiles/.config/waybar/rose-pine-dawn.css;
+
+    ".config/helix/themes/nord.toml".source = ./dotfiles/.config/helix/themes/nord.toml;
+    ".config/helix/config.toml".source = ./dotfiles/.config/helix/config.toml;
     
     ".zshrc".source = ./dotfiles/.zshrc;
     ".p10k.zsh".source = ./dotfiles/.p10k.zsh;
