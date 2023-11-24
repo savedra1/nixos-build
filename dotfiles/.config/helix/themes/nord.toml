@@ -2,37 +2,37 @@ attribute = "lilac"
 keyword = "almond"
 "keyword.directive" = "lilac" # -- preprocessor comments (#if in C)
 namespace = "lilac"
-punctuation = "lavender"
-"punctuation.delimiter" = "lavender"
-operator = "lilac"
+punctuation = "lilac"
+"punctuation.delimiter" = "lilac"
+operator = "nord_blue"
 special = "honey"
 "variable.other.member" = "white"
-variable = "lavender"
+variable = "white"
 # variable = "almond" # TODO: metavariables only
-# "variable.parameter" = { fg = "lavender", modifiers = ["underlined"] }
-"variable.parameter" = { fg = "lavender" }
-"variable.builtin" = "mint"
+# "variable.parameter" = { fg = "lilac", modifiers = ["underlined"] }
+"variable.parameter" = { fg = "lilac" }
+"variable.builtin" = "nord_green"
 type = "white"
 "type.builtin" = "white" # TODO: distinguish?
 constructor = "lilac"
 function = "white"
-"function.macro" = "lilac"
+"function.macro" = "nord_blue"
 "function.builtin" = "white"
 tag = "almond"
-comment = "sirocco"
+comment = "nord_blue"
 constant = "white"
 "constant.builtin" = "white"
-string = "silver"
+string = "nord_blue"
 "constant.numeric" = "chamois"
 "constant.character.escape" = "honey"
 # used for lifetimes
 label = "honey"
 
-"markup.heading" = "lilac"
+"markup.heading" = "nord_blue"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
-"markup.link.url" = { fg = "silver", modifiers = ["underlined"] }
+"markup.link.url" = { fg = "nord_green", modifiers = ["underlined"] }
 "markup.link.text" = "almond"
 "markup.raw" = "almond"
 
@@ -43,17 +43,17 @@ label = "honey"
 # TODO: diferentiate doc comment
 # concat (ERROR) @error.syntax and "MISSING ;" selectors for errors
 
-"ui.background" = { fg = "lavender" }
+"ui.background" = { fg = "lilac" }
 "ui.background.separator" = { fg = "comet" }
 "ui.linenr" = { fg = "comet" }
 "ui.linenr.selected" = { fg = "lilac" }
 "ui.statusline" = { fg = "lilac", bg = "revolver" }
-"ui.statusline.inactive" = { fg = "lavender"}
+"ui.statusline.inactive" = { fg = "lilac"}
 "ui.popup" = { bg = "revolver" }
 "ui.window" = { fg = "bossanova" }
 "ui.help" = { bg = "#7958DC", fg = "#171452" }
 
-"ui.text" = { fg = "lavender" }
+"ui.text" = { fg = "lilac" }
 "ui.text.focus" = { fg = "white" }
 "ui.text.inactive" = "sirocco"
 "ui.virtual" = { fg = "comet" }
@@ -68,15 +68,15 @@ label = "honey"
 "ui.cursor.match" = { fg = "#212121", bg = "#6C6999" }
 "ui.cursor" = { modifiers = ["reversed"] }
 "ui.cursorline.primary" = { bg = "bossanova" }
-"ui.highlight" = { bg = "bossanova" }
-"ui.highlight.frameline" = { bg = "#634450" }
+"ui.highlight" = { bg = "nord_blue" }
+"ui.highlight.frameline" = { bg = "white" }
 "ui.debug" = { fg = "#634450" }
 "ui.debug.breakpoint" = { fg = "apricot" }
-"ui.menu" = { fg = "lavender", bg = "revolver" }
-"ui.menu.selected" = { fg = "revolver", bg = "white" }
-"ui.menu.scroll" = { fg = "lavender", bg = "comet" }
+"ui.menu" = { fg = "white", bg = "lilac" }
+"ui.menu.selected" = { fg = "nord_blue", bg = "white" }
+"ui.menu.scroll" = { fg = "lilac", bg = "comet" }
 
-"diagnostic.hint" = { underline = { color = "silver", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "nord_green", style = "curl" } }
 "diagnostic.info" = { underline = { color = "delta", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "lightning", style = "curl" } }
 "diagnostic.error" = { underline = { color = "apricot", style = "curl" } }
@@ -84,15 +84,18 @@ label = "honey"
 warning = "lightning"
 error = "apricot"
 info = "delta"
-hint = "silver"
+hint = "nord_green"
 
 
 [palette]
 white = "#ffffff"
+
 lilac = "#B48EAD"
 midnight = "#3B4252"
-lavender = "#B48EAD"
-silver = "#A3BE8C"
+
+nord_green = "#8FBCBB"
+nord_blue = "#81A1C1"
+nord_orange = "#D08770"
 
 comet = "#5a5977"
 bossanova = "#452859"
@@ -100,7 +103,6 @@ bossanova = "#452859"
 revolver = "#281733"
 
 sirocco = "#697C81"
-mint = "#9ff28f"
 almond = "#eccdba"
 chamois = "#E8DCA0"
 honey = "#efba5d"

@@ -1,1 +1,21 @@
 theme = "nord"
+
+[keys.normal]
+C-a = "select_all"                 
+C-c = "yank_to_clipboard"   
+C-z = "undo"  
+C-f = "search"
+C-q = ":q!"
+C-t = "goto_window_top"
+
+[keys.insert]    
+C-a = "select_all"             
+C-c = "yank_to_clipboard"     
+C-z = "undo"   
+C-f = "search"
+C-q = ":q!"  
+C-t = "goto_window_top"
+
+
+
+
