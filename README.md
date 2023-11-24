@@ -15,7 +15,7 @@ A custom tailored NixOS configuration targeting the Hyprland window manager, com
 
 ## User Configuration
 
-The repository includes a `user-config.nix` file that has been set up with my user details for flake purity. If you intend to use this configuration, you'll need to update this file with your details:
+1. The repository includes a `user-config.nix` file that has been set up with my user details for flake purity. If you intend to use this configuration, you'll need to update this file with your details:
 
 ```nix
 {
@@ -23,7 +23,9 @@ The repository includes a `user-config.nix` file that has been set up with my us
   homeDirectory = "/home/yourUsername";  # Adjust the path accordingly
 }
 ```
-The information contained in hardware-configuration.nix will also need to be replaced with the information in the default hardware info file to ensure the serial numbers and metadata match up.
+2. The information contained in `~/nixos-build/hardware-configuration.nix` will also need to be replaced with the information in the default hardware file: `/etc/nixos/hardware-configuration.nix` to ensure the serial numbers and metadata match up.
+
+3. A new directory in the `/home/username/.local/state/` folder will need to created to store the nix profiles. You will need to first create a `nix` diorectory in the state directory and then a `profiles` directory in the nix directory. E.g. `/home/user/.local/state/nix/profiles`.
 
 ## Flake Build Commands
 
