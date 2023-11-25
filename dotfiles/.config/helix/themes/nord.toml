@@ -1,32 +1,32 @@
-attribute = "lilac"
-keyword = "almond"
-"keyword.directive" = "lilac" # -- preprocessor comments (#if in C)
-namespace = "lilac"
-punctuation = "lilac"
-"punctuation.delimiter" = "lilac"
-operator = "nord_blue"
-special = "honey"
+attribute = "nord_lilac"
+keyword = "nord_orange"
+"keyword.directive" = "nord_lilac" # -- preprocessor comments (#if in C)
+namespace = "nord_lilac"
+punctuation = "nord_lilac"
+"punctuation.delimiter" = "nord_lilac"
+operator = "nord_lilac"
+special = "nord_orange"
 "variable.other.member" = "white"
 variable = "white"
 # variable = "almond" # TODO: metavariables only
-# "variable.parameter" = { fg = "lilac", modifiers = ["underlined"] }
-"variable.parameter" = { fg = "lilac" }
-"variable.builtin" = "nord_green"
+# "variable.parameter" = { fg = "nord_lilac", modifiers = ["underlined"] }
+"variable.parameter" = { fg = "nord_lilac" }
+"variable.builtin" = "nord_light_blue"
 type = "white"
 "type.builtin" = "white" # TODO: distinguish?
-constructor = "lilac"
-function = "white"
-"function.macro" = "nord_blue"
+constructor = "nord_lilac"
+function = "nord_green"
+"function.macro" = "nord_light_blue"
 "function.builtin" = "white"
-tag = "almond"
-comment = "nord_blue"
+tag = "nord_orange"
+comment = "nord_green_dark"
 constant = "white"
 "constant.builtin" = "white"
 string = "nord_blue"
 "constant.numeric" = "chamois"
 "constant.character.escape" = "honey"
 # used for lifetimes
-label = "honey"
+label = "nord_orange"
 
 "markup.heading" = "nord_blue"
 "markup.bold" = { modifiers = ["bold"] }
@@ -43,17 +43,17 @@ label = "honey"
 # TODO: diferentiate doc comment
 # concat (ERROR) @error.syntax and "MISSING ;" selectors for errors
 
-"ui.background" = { fg = "lilac" }
+"ui.background" = { fg = "nord_lilac" }
 "ui.background.separator" = { fg = "comet" }
 "ui.linenr" = { fg = "comet" }
-"ui.linenr.selected" = { fg = "lilac" }
-"ui.statusline" = { fg = "lilac", bg = "revolver" }
-"ui.statusline.inactive" = { fg = "lilac"}
+"ui.linenr.selected" = { fg = "nord_lilac" }
+"ui.statusline" = { fg = "nord_lilac", bg = "revolver" }
+"ui.statusline.inactive" = { fg = "nord_lilac"}
 "ui.popup" = { bg = "revolver" }
 "ui.window" = { fg = "bossanova" }
 "ui.help" = { bg = "#7958DC", fg = "#171452" }
 
-"ui.text" = { fg = "lilac" }
+"ui.text" = { fg = "nord_lilac" }
 "ui.text.focus" = { fg = "white" }
 "ui.text.inactive" = "sirocco"
 "ui.virtual" = { fg = "comet" }
@@ -72,30 +72,37 @@ label = "honey"
 "ui.highlight.frameline" = { bg = "white" }
 "ui.debug" = { fg = "#634450" }
 "ui.debug.breakpoint" = { fg = "apricot" }
-"ui.menu" = { fg = "white", bg = "lilac" }
+"ui.menu" = { fg = "nord_lilac", bg = "nord_midnight" }
 "ui.menu.selected" = { fg = "nord_blue", bg = "white" }
-"ui.menu.scroll" = { fg = "lilac", bg = "comet" }
+"ui.menu.scroll" = { fg = "nord_lilac", bg = "comet" }
 
 "diagnostic.hint" = { underline = { color = "nord_green", style = "curl" } }
-"diagnostic.info" = { underline = { color = "delta", style = "curl" } }
-"diagnostic.warning" = { underline = { color = "lightning", style = "curl" } }
-"diagnostic.error" = { underline = { color = "apricot", style = "curl" } }
+"diagnostic.info" = { underline = { color = "nord_light_blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "nord_yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "nord_red", style = "curl" } }
 
-warning = "lightning"
-error = "apricot"
-info = "delta"
+warning = "nord_yellow"
+error = "nord_red"
+info = "nord_light_blue"
 hint = "nord_green"
 
 
 [palette]
 white = "#ebe5e5"
 
-lilac = "#B48EAD"
-midnight = "#3B4252"
+nord_lilac = "#B48EAD"
+nord_midnight = "#3B4252"
 
 nord_green = "#8FBCBB"
+nord_green_dark = "#A3BE8C"
 nord_blue = "#81A1C1"
 nord_orange = "#D08770"
+
+nord_light_blue = "#88C0D0"
+nord_yellow = "#EBCB8B"
+nord_red = "#BF616A"
+
+
 
 comet = "#5a5977"
 bossanova = "#452859"
