@@ -47,7 +47,7 @@ alias run-forti='sudo openfortivpn -c /home/michael/.config/vpn --username=ovoen
 alias kill-forti='pkill openfortivpn'
 
 # Enter shell with go-based draw CLI app. Creds to https://github.com/maaslalani/draw
-alias draw-shell='cd /home/michael/nix-shells && nix-shell draw-shell.nix'
+alias draw='cd /home/michael/nix-shells && nix-shell draw-shell.nix --run "draw"'
 
 
 # Detailed ls
