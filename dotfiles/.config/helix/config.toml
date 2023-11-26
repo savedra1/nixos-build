@@ -6,7 +6,10 @@ C-c = "yank_to_clipboard"
 C-z = "undo"  
 C-f = "search"
 C-q = ":q!"
+C-s = ":w"
 C-t = "goto_window_top"
+C-o = ":open /home/michael/nixos-build/dotfiles.config/helix/config.toml"
+C-right = "move_next_word_start"
 
 [keys.insert]    
 C-a = "select_all"             
@@ -14,7 +17,10 @@ C-c = "yank_to_clipboard"
 C-z = "undo"   
 C-f = "search"
 C-q = ":q!"  
+C-s = ":w"
 C-t = "goto_window_top"
+C-right = "move_next_word_start"
+
 
 
 

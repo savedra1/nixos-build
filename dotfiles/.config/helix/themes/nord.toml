@@ -1,8 +1,8 @@
-attribute = "nord_lilac"
-keyword = "nord_orange"
+attribute = "white"
+keyword = "nord_lilac"
 "keyword.directive" = "nord_lilac" # -- preprocessor comments (#if in C)
-namespace = "nord_lilac"
-punctuation = "nord_lilac"
+namespace = "white"
+punctuation = "nord_orange"
 "punctuation.delimiter" = "nord_lilac"
 operator = "nord_lilac"
 special = "nord_orange"
@@ -10,16 +10,16 @@ special = "nord_orange"
 variable = "white"
 # variable = "almond" # TODO: metavariables only
 # "variable.parameter" = { fg = "nord_lilac", modifiers = ["underlined"] }
-"variable.parameter" = { fg = "nord_lilac" }
+"variable.parameter" = { fg = "white" }
 "variable.builtin" = "nord_light_blue"
 type = "white"
 "type.builtin" = "white" # TODO: distinguish?
-constructor = "nord_lilac"
+constructor = "nord_green"
 function = "nord_green"
 "function.macro" = "nord_light_blue"
 "function.builtin" = "white"
-tag = "nord_orange"
-comment = "nord_green_dark"
+tag = "white"
+comment = "nord_midnight"
 constant = "white"
 "constant.builtin" = "white"
 string = "nord_blue"
