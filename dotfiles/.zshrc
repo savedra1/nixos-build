@@ -46,6 +46,10 @@ alias nixos-clean='sudo nix-env --delete-generations old -p /nix/var/nix/profile
 alias run-forti='sudo openfortivpn -c /home/michael/.config/vpn --username=ovoenergy/michael.savedra --pppd-accept-remote'
 alias kill-forti='pkill openfortivpn'
 
+# Enter shell with go-based draw CLI app. Creds to https://github.com/maaslalani/draw
+alias draw-shell='cd /home/michael/nix-shells && nix-shell draw-shell.nix'
+
+
 # Detailed ls
 alias ls='lsd'
 

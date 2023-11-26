@@ -156,6 +156,8 @@ in
     
     "/powerlevel10k".source = powerlevel10kSrc;
 
+    "nix-shells/draw-shell.nix".source = shells/draw-shell.nix;
+
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Regular.ttf".source = mesloLGSFonts.Regular;
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Bold.ttf".source = mesloLGSFonts.Bold;
     ".local/share/fonts/MesloLGS-NF/MesloLGS NF Italic.ttf".source = mesloLGSFonts.Italic;
