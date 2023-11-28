@@ -36,9 +36,9 @@ label = "nord_orange"
 "markup.link.text" = "almond"
 "markup.raw" = "almond"
 
-"diff.plus" = "#35bf86"
-"diff.minus" = "#f22c86"
-"diff.delta" = "#6f44f0"
+"diff.plus" = "nord_green"
+"diff.minus" = "nord_red"
+"diff.delta" = "nord_yellow"
 
 # TODO: diferentiate doc comment
 # concat (ERROR) @error.syntax and "MISSING ;" selectors for errors
@@ -61,20 +61,20 @@ label = "nord_orange"
 "ui.virtual.indent-guide" = { fg = "nord_midnight" }
 
 "ui.selection" = { bg = "#540099" }
-"ui.selection.primary" = { bg = "#540099" }
+"ui.selection.primary" = { bg = "nord_midnight" }
 # TODO: namespace ui.cursor as ui.selection.cursor?
-"ui.cursor.select" = { bg = "delta" }
+"ui.cursor.select" = { bg = "white" }
 "ui.cursor.insert" = { bg = "white" }
-"ui.cursor.match" = { fg = "#212121", bg = "#6C6999" }
+"ui.cursor.match" = { fg = "white", bg = "nord_midnight" }
 "ui.cursor" = { modifiers = ["reversed"] }
-"ui.cursorline.primary" = { bg = "bossanova" }
+"ui.cursorline.primary" = { bg = "nord_midnight" }
 "ui.highlight" = { bg = "white" }
 "ui.highlight.frameline" = { bg = "white" }
-"ui.debug" = { fg = "#634450" }
-"ui.debug.breakpoint" = { fg = "apricot" }
+"ui.debug" = { fg = "#nord_blue" }
+"ui.debug.breakpoint" = { fg = "nord_orange" }
 "ui.menu" = { fg = "nord_lilac" }
 "ui.menu.selected" = { fg = "nord_blue", bg = "white" }
-"ui.menu.scroll" = { fg = "nord_lilac", bg = "comet" }
+"ui.menu.scroll" = { fg = "nord_lilac", bg = "nord_midnight" }
 
 "diagnostic.hint" = { underline = { color = "nord_green", style = "curl" } }
 "diagnostic.info" = { underline = { color = "nord_light_blue", style = "curl" } }

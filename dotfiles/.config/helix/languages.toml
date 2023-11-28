@@ -4,6 +4,18 @@ command = "gopls"
 [[language]]
 name = "go"
 auto-format = true
-language-servers = [ "gopls" ]
+language-servers = [ 
+    { name = "gopls", only-features = [ 
+        "format", "completion", "diagnostics"
+    ] }, 
+    "typescript-language-server" 
+    ]
+
 file-types = [ "go" ]
+diagnostic-severity = "Error" 
+
+[editor.lsp]
+auto-signature-help = false
+signature-help = false
+
 

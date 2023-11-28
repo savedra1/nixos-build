@@ -20,10 +20,8 @@ S-left = "move_prev_word_start"
 S-C-right = "extend_line_below"
 
 [keys.insert] 
-   
 C-a = "select_all"             
-C-c = "yank_to_clipboard"     
-C-z = "undo"   
+C-c = "yank_to_clipboard"        
 C-f = "search"
 C-q = ":q!"  
 C-s = ":write"
