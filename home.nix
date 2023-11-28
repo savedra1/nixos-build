@@ -143,7 +143,7 @@ in
 
     ".config/helix/themes/nord.toml".source = ./dotfiles/.config/helix/themes/nord.toml;
     ".config/helix/config.toml".source = ./dotfiles/.config/helix/config.toml;
-    ".config/helix/langauges.toml".source = ./dotfiles/.config/helix/langauges.toml;
+    ".config/helix/languages.toml".source = ./dotfiles/.config/helix/languages.toml;
 
     ".config/lsd/config.yml".source = ./dotfiles/.config/lsd/config.yml;
     ".config/lsd/icons.yml".source = ./dotfiles/.config/lsd/icons.yml;
