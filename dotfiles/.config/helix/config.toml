@@ -1,26 +1,40 @@
 theme = "nord"
 
 [keys.normal]
+backspace = "delete_char_backward"
+
 C-a = "select_all"                 
 C-c = "yank_to_clipboard"   
 C-z = "undo"  
 C-f = "search"
 C-q = ":q!"
 C-s = ":w"
+C-S-s = ":wq"
 C-t = "goto_window_top"
 C-o = ":open /home/michael/nixos-build/dotfiles/.config/helix/config.toml"
-C-right = "move_next_word_start"
+C-v = "paste_clipboard_after"
+C-backspace = "delete_word_backward"
 
-[keys.insert]    
+S-right = "move_next_word_start"
+S-left = "move_prev_word_start"
+S-C-right = "extend_line_below"
+
+[keys.insert] 
+   
 C-a = "select_all"             
 C-c = "yank_to_clipboard"     
 C-z = "undo"   
 C-f = "search"
 C-q = ":q!"  
-C-s = ":w"
-C-t = "goto_window_top"
-C-right = "move_next_word_start"
+C-s = ":write"
+C-S-s = ":wq"
+C-t = "goto_window_top"  
+C-v = "paste_clipboard_after"
+C-backspace = "delete_word_backward"
 
+S-right = "move_next_word_start"
+S-left = "move_prev_word_start"
+S-C-right = "extend_line_below"
 
 
 

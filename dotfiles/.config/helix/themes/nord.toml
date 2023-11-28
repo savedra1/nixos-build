@@ -44,21 +44,21 @@ label = "nord_orange"
 # concat (ERROR) @error.syntax and "MISSING ;" selectors for errors
 
 "ui.background" = { fg = "nord_lilac" }
-"ui.background.separator" = { fg = "comet" }
-"ui.linenr" = { fg = "comet" }
+"ui.background.separator" = { fg = "nord_blue" }
+"ui.linenr" = { fg = "nord_midnight" }
 "ui.linenr.selected" = { fg = "nord_lilac" }
-"ui.statusline" = { fg = "nord_lilac", bg = "revolver" }
+"ui.statusline" = { fg = "nord_lilac", bg = "nord_midnight" }
 "ui.statusline.inactive" = { fg = "nord_lilac"}
-"ui.popup" = { bg = "revolver" }
-"ui.window" = { fg = "bossanova" }
-"ui.help" = { bg = "#7958DC", fg = "#171452" }
+"ui.popup" = { bg = "nord_blue" }
+"ui.window" = { fg = "nord_midnight" }
+"ui.help" = { bg = "nord_midnight", fg = "white" }
 
-"ui.text" = { fg = "nord_lilac" }
+"ui.text" = { fg = "white" }
 "ui.text.focus" = { fg = "white" }
-"ui.text.inactive" = "sirocco"
-"ui.virtual" = { fg = "comet" }
+"ui.text.inactive" = "nord_orange"
+"ui.virtual" = { fg = "nord_midnight" }
 
-"ui.virtual.indent-guide" = { fg = "comet" }
+"ui.virtual.indent-guide" = { fg = "nord_midnight" }
 
 "ui.selection" = { bg = "#540099" }
 "ui.selection.primary" = { bg = "#540099" }
@@ -68,11 +68,11 @@ label = "nord_orange"
 "ui.cursor.match" = { fg = "#212121", bg = "#6C6999" }
 "ui.cursor" = { modifiers = ["reversed"] }
 "ui.cursorline.primary" = { bg = "bossanova" }
-"ui.highlight" = { bg = "nord_blue" }
+"ui.highlight" = { bg = "white" }
 "ui.highlight.frameline" = { bg = "white" }
 "ui.debug" = { fg = "#634450" }
 "ui.debug.breakpoint" = { fg = "apricot" }
-"ui.menu" = { fg = "nord_lilac", bg = "nord_midnight" }
+"ui.menu" = { fg = "nord_lilac" }
 "ui.menu.selected" = { fg = "nord_blue", bg = "white" }
 "ui.menu.scroll" = { fg = "nord_lilac", bg = "comet" }
 
@@ -85,7 +85,6 @@ warning = "nord_yellow"
 error = "nord_red"
 info = "nord_light_blue"
 hint = "nord_green"
-
 
 [palette]
 white = "#ebe5e5"
