@@ -6,7 +6,7 @@ name = "go"
 auto-format = true
 language-servers = [ 
     { name = "gopls", only-features = [ 
-        "format", "completion", "diagnostics", "inlay-hints"
+        "format", "completion", "diagnostics"
     ] }, 
     "typescript-language-server" 
     ]
