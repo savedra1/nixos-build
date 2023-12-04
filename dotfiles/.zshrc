@@ -51,7 +51,7 @@ alias draw='cd /home/michael/nix-shells && nix-shell draw-shell.nix --run "draw"
 
 # Custom CLI I built, need to get this set up as part of the OS config
 # Installable with command: go install github.com/MichaelSavedra1/weather/weather@latest
-alias weather='cd /home/michael/go/bin && ./weather'
+alias weather='/home/michael/go/bin/weather'
 
 # Detailed ls
 alias ls='lsd'
