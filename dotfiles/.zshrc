@@ -64,3 +64,5 @@ alias ls='lsd'
 if [ "$(tty)" = "/dev/tty1" ]; then
     exec nixGLIntel Hyprland
 fi
+
+eval "$(direnv hook zsh)"
