@@ -74,8 +74,8 @@
             enable = true;
             # Use the hy3 plugin with Hypr
             plugins = [ hy3.packages.x86_64-linux.hy3 ];
-            recommendedEnvironment = true;
-            systemdIntegration = true;
+            #recommendedEnvironment = true;
+            systemd.enable = true;
             xwayland.enable = true;
           };
           # Add nixGLIntel package for OpenGL support
