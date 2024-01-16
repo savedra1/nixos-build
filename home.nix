@@ -130,7 +130,8 @@ in
     ".config/rofi/config.rasi".source = ./dotfiles/.config/rofi/config.rasi;
     ".config/rofi/nord.rasi".source = ./dotfiles/.config/rofi/nord.rasi;
 
-    ".config/alacritty/alacritty.yml".source = ./dotfiles/.config/alacritty/alacritty.yml;
+    #".config/alacritty/alacritty.yml".source = ./dotfiles/.config/alacritty/alacritty.yml;
+    ".config/alacritty/alacritty.toml".source = ./dotfiles/.config/alacritty/alacritty.toml;
 
     ".config/swappy/config".source = ./dotfiles/.config/swappy/config;
 

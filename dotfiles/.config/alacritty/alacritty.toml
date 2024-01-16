@@ -1,0 +1,87 @@
+[colors.bright]
+black = "0x4c566a"
+blue = "0x81a1c1"
+cyan = "0x8fbcbb"
+green = "0x88c0d0"
+magenta = "0xb48ead"
+red = "0xbf616a"
+white = "0xe5e9f0"
+yellow = "0xd08770"
+
+[colors.cursor]
+cursor = "0xcecacd"
+text = "0xe5e9f0"
+
+[colors.hints.end]
+background = "#2e3440"
+foreground = "#4c566a"
+
+[colors.hints.start]
+background = "#2e3440"
+foreground = "#5e81ac"
+
+[colors.line_indicator]
+background = "None"
+foreground = "None"
+
+[colors.normal]
+black = "0x4c566a"
+blue = "0x81a1c1"
+cyan = "0x8fbcbb"
+green = "0x88c0d0"
+magenta = "0xb48ead"
+red = "0xbf616a"
+white = "0xe5e9f0"
+yellow = "0xd08770"
+
+[colors.primary]
+background = "0x2e3440"
+foreground = "0xe5e9f0"
+
+[colors.selection]
+background = "0x5e81ac"
+text = "0xe5e9f0"
+
+[colors.vi_mode_cursor]
+cursor = "0xcecacd"
+text = "0xe5e9f0"
+
+[font.bold]
+family = "Monospace"
+style = "Bold"
+
+[font.italic]
+family = "Monospace"
+style = "Italic"
+
+[font.normal]
+family = "Monospace"
+style = "Regular"
+
+[[keyboard.bindings]]
+chars = "\u001BF"
+key = "Right"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001BB"
+key = "Left"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "chmod +rwx "
+key = "P"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001B\u007F"
+key = "Back"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Shift"
+
+[window]
+opacity = 0.7
