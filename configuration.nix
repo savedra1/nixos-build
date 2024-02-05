@@ -52,7 +52,7 @@ in
     wl-clipboard unzip statix nixpkgs-fmt neofetch rofi-wayland libnotify waybar htop postgresql
     insomnia docker-compose tailscale vscode slack networkmanagerapplet openfortivpn lsd helix gopls
     go python311Packages.ruff-lsp noto-fonts noto-fonts-emoji direnv terraform awscli2 tor-browser 
-    firefox bitwig-studio
+    firefox bitwig-studio distrobox
   ];
 
   virtualisation.docker.enable = true; # Enable Docker
