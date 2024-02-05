@@ -50,9 +50,8 @@ in
     nodejs python3 python3Packages.pip shellcheck wdisplays git blueman brightnessctl hyprpaper
     home-manager pavucontrol alsa-utils grim bluez vscode gnome.gnome-boxes shfmt mako slurp 
     wl-clipboard unzip statix nixpkgs-fmt neofetch rofi-wayland libnotify waybar htop postgresql
-    insomnia docker-compose tailscale vscode slack networkmanagerapplet openfortivpn lsd helix gopls
-    go python311Packages.ruff-lsp noto-fonts noto-fonts-emoji direnv terraform awscli2 tor-browser 
-    firefox bitwig-studio distrobox
+    insomnia docker-compose tailscale vscode slack openfortivpn lsd helix gopls go python311Packages.ruff-lsp 
+    noto-fonts noto-fonts-emoji direnv terraform awscli2 firefox distrobox
   ];
 
   virtualisation.docker.enable = true; # Enable Docker
