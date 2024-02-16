@@ -58,6 +58,8 @@
     windowrulev2 = opacity 0.8 0.8,class:^(docker-compose)$
     windowrulev2 = opacity 0.7 0.7,class:^(Insomnia)$
     windowrulev2 = opacity 0.7 0.7,class:^(helix)$
+    windowrulev2 = float,class:(floating)
+    
 
 
     # Decoration Configuration
@@ -111,13 +113,13 @@
     bind = $mainMod, ESCAPE, exec, swaylock --clock --screenshots --effect-blur 7x5 # Lock screen
     bind = $mainMod, BACKSPACE, hy3:makegroup, opposite, ephemeral # Toggle split
     bind = $mainMod_SHIFT, E, exit                 # Exit system
-    bind = $mainMod, V, togglefloating
+    bind = $mainMod_SHIFT, V, togglefloating  # float current window
 
     # Application Bindings
     bind = $mainMod, RETURN, exec, alacritty       # Open terminal
     bind = $mainMod, SPACE, exec, rofi -show drun  # Launch rofi
     bind = $mainMod, S, exec, pavucontrol          # Open sound control
-    bind = $mainMod, W, exec, alacritty -e sh -c 'sleep 0.1; nmtui' # Open network manager
+    bind = $mainMod, N, exec, alacritty -e sh -c 'sleep 0.1; nmtui' # Open network manager
     bind = $mainMod, D, exec, wdisplays            # Display settings
     bind = $mainMod, B, exec, blueman-manager      # Bluetooth manager
     bind = $mainMod_SHIFT, RETURN, exec, google-chrome-stable # Launch Chrome
@@ -170,10 +172,16 @@
     bind = $mainMod SHIFT, 9, movetoworkspace, 9
     bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
+    # Test bind 
+    bind = SUPER, V, exec, alacritty --class floating -e zsh -c 'cd personal-projects/clipboard/nixclip && go run test.go open $PPID'
+
+    # weather CLI
+    bind = SUPER, W, exec, alacritty -e sh -c 'sleep 0.1; weather'
+
     # Lid switch event
     # bindl=,switch:Lid Switch,exec,swaylock --clock --image //home/michael/Pictures/screensaver.jpg # Lock screen 
 
-    # Full screen a windo
+    # Full screen a windoc
     bind=SUPER,F,fullscreen
 
     # Resize window & move floating window
