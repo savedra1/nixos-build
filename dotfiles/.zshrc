@@ -56,6 +56,9 @@ alias weather='/home/michael/go/bin/weather'
 # Detailed ls
 alias ls='lsd'
 
+# clipboard
+alias cb='cd personal-projects/clipboard/nixclip && go run test.go open $PPID'
+
 # ===============
 # Miscellaneous Configurations
 # ===============
