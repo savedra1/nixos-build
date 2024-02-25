@@ -12,12 +12,11 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # Import Hyprland for the Hypr window manager and related configurations
-    # Known safe commit: 1607e967041fd3311411de0def8cdc0610274f98
-    hyprland.url = "github:hyprwm/hyprland/1607e967041fd3311411de0def8cdc0610274f98";
+    hyprland.url = "github:hyprwm/hyprland?ref=v0.35.0";
 
     # Import hy3: a plugin for the Hypr window manager
     hy3 = {
-      url = "github:outfoxxed/hy3";
+      url = "github:outfoxxed/hy3?ref=hl0.35.0";
       # Ensure that hy3 uses the same version of Hyprland as this Flake
       inputs.hyprland.follows = "hyprland";
     };
