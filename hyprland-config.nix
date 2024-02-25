@@ -13,7 +13,7 @@
     exec-once = mako                    # Launch mako
     exec-once = hyprctl setcursor DMZ-White 24 # Set cursor
     exec-once = waybar                  # Launch waybar
-    exec-once = /home/personal-projects/clipse/clipse/clipse --listen-shell
+    exec-once = /home/michael/personal-projects/clipse/clipse/clipse -listen
 
     # Environmental Variables
     env = WLR_NO_HARDWARE_CURSORS,1

@@ -12,6 +12,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # Import Hyprland for the Hypr window manager and related configurations
+    # Known safe commit: 1607e967041fd3311411de0def8cdc0610274f98
     hyprland.url = "github:hyprwm/hyprland/1607e967041fd3311411de0def8cdc0610274f98";
 
     # Import hy3: a plugin for the Hypr window manager
