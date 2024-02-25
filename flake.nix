@@ -24,6 +24,8 @@
 
     # Import nixGL to provide support for OpenGL drivers in the Nix environment
     nixgl.url = "github:guibou/nixGL/main";
+
+
   };
 
   # Define the outputs of the Flake

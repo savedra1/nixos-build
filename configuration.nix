@@ -35,6 +35,11 @@ in
     hybrid-sleep = {};
     sleep = {};
   };
+  
+  # Override the NetworkManager-wait-online.service
+  systemd.services.NetworkManager-wait-online = {
+    enable = false;
+  };
 
   # User Configurations
   users.users.${userConfig.username} = {
@@ -88,6 +93,7 @@ in
   # Network and Bluetooth Configurations
   networking = {
     networkmanager.enable = true; # Enable NetworkManager for network management
+    #networkmanager-wait-online.service = false;
     hosts = { # Hosts file configurations
       "127.0.0.1" = [
       "neowin.net"
