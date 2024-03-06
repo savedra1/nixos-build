@@ -40,6 +40,8 @@
       system = "x86_64-linux";
       overlays = [ nixgl.overlay ];
     };
+
+
   in
   {
     # User-specific configurations imported from an external file

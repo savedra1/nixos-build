@@ -13,7 +13,7 @@
     exec-once = mako                    # Launch mako
     exec-once = hyprctl setcursor DMZ-White 24 # Set cursor
     exec-once = waybar                  # Launch waybar
-    exec-once = /home/michael/personal-projects/clipse/clipse/clipse -listen
+    exec-once = clipse -listen
 
     # Environmental Variables
     env = WLR_NO_HARDWARE_CURSORS,1
@@ -173,11 +173,11 @@
     bind = $mainMod SHIFT, 9, movetoworkspace, 9
     bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
-    # Test bind 
-    bind = SUPER, V, exec, alacritty --class floating -e zsh -c 'cd personal-projects/clipse/clipse && ./clipse $PPID'
+    # Clipse bind 
+    bind = SUPER, V, exec, alacritty --class floating -e zsh -c 'clipse $PPID'
 
     # weather CLI
-    bind = SUPER, W, exec, alacritty -e sh -c 'sleep 0.1; weather'
+    bind = SUPER, W, exec, alacritty -e sh -c 'sleep 0.1; weather; sleep 1000000'
 
     # Lid switch event
     # bindl=,switch:Lid Switch,exec,swaylock --clock --image //home/michael/Pictures/screensaver.jpg # Lock screen 

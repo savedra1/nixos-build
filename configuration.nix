@@ -1,4 +1,7 @@
 { config, pkgs, inputs, ... }:
+#fetchFromGitHub
+#buildGoModule
+#lib
 
 let
   # Import user-specific configuration
@@ -49,6 +52,30 @@ in
     extraGroups = [ "wheel" "networkmanager" ]; # Adding the user to groups
   };
 
+  # Better scheduling for CPU cycles - thanks System76!!!
+  services.system76-scheduler.settings.cfsProfiles.enable = true;
+
+  # Enable TLP (better than gnomes internal power manager)
+  services.tlp = {
+    enable = true;
+    settings = {
+      CPU_BOOST_ON_AC = 1;
+      CPU_BOOST_ON_BAT = 0;
+      CPU_SCALING_GOVERNOR_ON_AC = "performance";
+      CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+    };
+  };
+
+  # Disable GNOMEs power management
+  services.power-profiles-daemon.enable = false;
+
+  # Enable powertop
+  powerManagement.powertop.enable = true;
+
+  # Enable thermald (only necessary if on Intel CPUs)
+  #services.thermald.enable = true;
+
+
   # Software and Package Configurations
   environment.systemPackages = with pkgs; [ # List of packages to be globally installed
     alacritty google-chrome wget docker wob libfido2 gh swappy swaylock-effects
@@ -57,7 +84,7 @@ in
     unzip statix nixpkgs-fmt neofetch rofi-wayland libnotify waybar htop postgresql
     insomnia docker-compose vscode slack networkmanagerapplet openfortivpn lsd helix gopls
     go python311Packages.ruff-lsp noto-fonts noto-fonts-emoji direnv terraform awscli2 wayland 
-    wl-clipboard
+    wl-clipboard #clipse
   ];
 
   virtualisation.docker.enable = true; # Enable Docker
@@ -121,6 +148,5 @@ in
   };
 
   security.pam.services.swaylock = { allowNullPassword = true; }; # Enable PAM for Swaylock
+
 }
-
-
