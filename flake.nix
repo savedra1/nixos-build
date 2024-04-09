@@ -11,7 +11,7 @@
     # Ensure that Home Manager uses the same Nixpkgs version as this Flake
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    # Import Hyprland for the Hypr window manager and related configurations
+    # Import Hyprland for the wayland compositer
     hyprland.url = "github:hyprwm/hyprland?ref=v0.35.0";
 
     # Import hy3: a plugin for the Hypr window manager
@@ -23,8 +23,6 @@
 
     # Import nixGL to provide support for OpenGL drivers in the Nix environment
     nixgl.url = "github:guibou/nixGL/main";
-
-
   };
 
   # Define the outputs of the Flake

@@ -1,4 +1,8 @@
-{ config, pkgs, inputs, ... }:
+{ config
+, pkgs
+, inputs
+, ... 
+}:
 #fetchFromGitHub
 #buildGoModule
 #lib
@@ -54,7 +58,6 @@ in
 
   # Better scheduling for CPU cycles - thanks System76!!!
   services.system76-scheduler.settings.cfsProfiles.enable = true;
-
   # Enable TLP (better than gnomes internal power manager)
   services.tlp = {
     enable = true;
@@ -65,13 +68,10 @@ in
       CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
     };
   };
-
   # Disable GNOMEs power management
   services.power-profiles-daemon.enable = false;
-
   # Enable powertop
   powerManagement.powertop.enable = true;
-
   # Enable thermald (only necessary if on Intel CPUs)
   #services.thermald.enable = true;
 
@@ -84,7 +84,7 @@ in
     unzip statix nixpkgs-fmt neofetch rofi-wayland libnotify waybar htop postgresql
     insomnia docker-compose vscode slack networkmanagerapplet openfortivpn lsd helix gopls
     go python311Packages.ruff-lsp noto-fonts noto-fonts-emoji direnv terraform awscli2 wayland 
-    wl-clipboard #clipse
+    jira-cli-go hydra-check wl-clipboard firefox dig #unstable.clipse
   ];
 
   virtualisation.docker.enable = true; # Enable Docker
