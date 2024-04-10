@@ -20,6 +20,7 @@
 
     # Input Configuration
     input {
+        sensitivity = 0.5
         kb_layout = us                  # Keyboard layout
         touchpad {
             natural_scroll = true       # Touchpad natural scroll
@@ -100,9 +101,9 @@
     }
 
     # Device Configuration
-    device:epic-mouse-v1 {
-        sensitivity = -0.5                 # Sensitivity setting
-    }
+    # device:epic-mouse-v1 {
+    #     sensitivity = -0.5                 # Sensitivity setting
+    # }
 
     # Main Modification Key
     $mainMod = SUPER
