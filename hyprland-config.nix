@@ -175,7 +175,7 @@
     bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
     # Clipse bind 
-    bind = SUPER, V, exec, alacritty --class floating -e zsh -c 'clipse $PPID'
+    bind = SUPER, V, exec, alacritty --class floating -e zsh -c 'clipse'
 
     # weather CLI
     bind = SUPER, W, exec, alacritty -e sh -c 'sleep 0.1; weather; sleep 1000000'
