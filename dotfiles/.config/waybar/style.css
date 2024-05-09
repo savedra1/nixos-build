@@ -182,7 +182,7 @@ window#waybar.hidden {
 #album-art {
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 @keyframes blink {

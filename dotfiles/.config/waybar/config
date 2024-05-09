@@ -9,7 +9,7 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": ["clock", "hyprland/workspaces", "image#album-art"],
-    "modules-center": [],
+    "modules-center": ["custom/rofi"],
     "modules-right": ["pulseaudio", "backlight", "battery", "network"],
 
 
@@ -120,5 +120,10 @@
         "size": 32,
         "interval": 5,
         "on-click": "code /home/michael/nixos-build"
+    },
+
+    "custom/rofi": {
+        "format": "{}<big> ⩘ </big>",
+        "on-click": "rofi -show drun"
     }
 }
