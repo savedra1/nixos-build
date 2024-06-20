@@ -75,6 +75,8 @@ in
   # Enable thermald (only necessary if on Intel CPUs)
   #services.thermald.enable = true;
 
+  # disable acpi on boot
+  #boot.kernelParams = [ "acpi=off" ];
 
   # Software and Package Configurations
   environment.systemPackages = with pkgs; [ # List of packages to be globally installed
@@ -84,7 +86,7 @@ in
     unzip statix nixpkgs-fmt neofetch rofi-wayland libnotify waybar htop postgresql
     insomnia docker-compose vscode slack networkmanagerapplet openfortivpn lsd helix gopls
     go python311Packages.ruff-lsp noto-fonts noto-fonts-emoji direnv terraform awscli2 wayland 
-    wl-clipboard firefox lsof tre-command fzf ripgrep bat zip clipse  #hydra-check #obs-studio  #strace #unstable.clipse
+    wl-clipboard firefox lsof tre-command fzf ripgrep bat zip clipse obs-studio #hydra-check  #strace #unstable.clipse
   ];
 
   virtualisation.docker.enable = true; # Enable Docker
