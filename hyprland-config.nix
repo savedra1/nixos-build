@@ -61,8 +61,8 @@
     windowrulev2 = opacity 0.7 0.7,class:^(Insomnia)$
     windowrulev2 = opacity 0.7 0.7,class:^(helix)$
     windowrulev2 = float,class:(floating)
+    windowrulev2 = size 622 652,class:(floating)
     
-
 
     # Decoration Configuration
     decoration {
