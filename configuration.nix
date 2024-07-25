@@ -86,8 +86,8 @@ in
     unzip statix nixpkgs-fmt neofetch rofi-wayland libnotify waybar htop postgresql
     insomnia docker-compose vscode slack networkmanagerapplet openfortivpn lsd helix gopls
     go python311Packages.ruff-lsp noto-fonts noto-fonts-emoji direnv terraform awscli2 aws-sam-cli 
-    wayland wl-clipboard firefox lsof tre-command fzf ripgrep bat zip obs-studio clipse
-    #hydra-check  #strace #unstable.clipse
+    wayland wl-clipboard firefox lsof tre-command fzf ripgrep bat zip obs-studio act
+    #hydra-check  #strace 
   ];
 
   virtualisation.docker.enable = true; # Enable Docker
