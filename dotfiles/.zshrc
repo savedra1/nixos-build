@@ -56,6 +56,13 @@ alias weather='/home/michael/go/bin/weather'
 # Detailed ls
 alias ls='lsd'
 
+# terraform
+alias tfi='terraform init'
+alias tfp='terraform plan'
+alias tfa='terraform apply --auto-approve'
+alias tfd='terraform destroy --auto-approve'
+alias tfsl='terraform state list'
+
 # ===============
 # Miscellaneous Configurations
 # ===============
