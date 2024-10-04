@@ -87,7 +87,8 @@ in
     insomnia docker-compose vscode slack networkmanagerapplet openfortivpn lsd helix gopls
     go python311Packages.ruff-lsp noto-fonts noto-fonts-emoji direnv terraform awscli2 aws-sam-cli 
     wayland wl-clipboard firefox lsof tre-command fzf ripgrep bat zip obs-studio clipse jq stress
-    jenkins
+    minikube kubernetes kubectl 
+    distrobox openshift kitty
     #hydra-check  #strace 
   ];
 
