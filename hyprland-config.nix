@@ -60,8 +60,10 @@
     windowrulev2 = opacity 0.8 0.8,class:^(docker-compose)$
     windowrulev2 = opacity 0.7 0.7,class:^(Insomnia)$
     windowrulev2 = opacity 0.7 0.7,class:^(helix)$
+    windowrulev2 = opacity 0.7 0.7,class:^(kitty)$
     windowrulev2 = float,class:(clipse)
     windowrulev2 = size 622 652,class:(clipse)
+    windowrulev2 = opacity 0.8 0.8,class:(clipse)
 
     # Decoration Configuration
     decoration {
@@ -174,7 +176,7 @@
     bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
     # Clipse bind 
-    bind = SUPER, V, exec, alacritty --class clipse -e 'clipse'
+    bind = SUPER, V, exec, kitty --class clipse -e 'clipse'
 
     # weather CLI
     bind = SUPER, W, exec, alacritty -e sh -c 'sleep 0.1; weather; sleep 1000000'
