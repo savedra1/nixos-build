@@ -14,7 +14,7 @@ let
 in
 {
   # General System Configurations
-  system.stateVersion = "24.05"; # System version specification
+  system.stateVersion = "25.05"; # System version specification
   nixpkgs.config.allowUnfree = true; # Enable non-free packages
   time.timeZone = "Europe/London"; # Set timezone
 
@@ -82,13 +82,12 @@ in
   environment.systemPackages = with pkgs; [ # List of packages to be globally installed
     alacritty google-chrome wget docker wob libfido2 gh swappy swaylock-effects
     python3 python3Packages.pip shellcheck wdisplays git blueman brightnessctl hyprpaper
-    home-manager pavucontrol alsa-utils grim bluez vscode gnome.gnome-boxes shfmt mako slurp 
-    unzip statix nixpkgs-fmt neofetch rofi-wayland libnotify waybar htop postgresql
+    home-manager pavucontrol alsa-utils grim bluez vscode shfmt mako slurp 
+    unzip statix nixpkgs-fmt neofetch rofi libnotify waybar htop postgresql
     insomnia docker-compose vscode slack networkmanagerapplet openfortivpn lsd helix gopls
-    go python311Packages.ruff-lsp noto-fonts noto-fonts-emoji direnv terraform awscli2 aws-sam-cli 
-    wayland wl-clipboard firefox lsof tre-command fzf ripgrep bat zip obs-studio jq stress
-    minikube kubernetes kubectl 
-    distrobox openshift kitty wtype
+    go noto-fonts noto-fonts-color-emoji direnv terraform aws-sam-cli 
+    wayland wl-clipboard firefox lsof tre-command fzf ripgrep bat zip obs-studio jq
+    distrobox kitty
     #hydra-check  #strace 
   ];
 
@@ -102,7 +101,7 @@ in
   };
 
   # Sound and Media Configurations
-  sound.enable = true; # Enable sound support
+  # sound.enable = true; # Enable sound support
   security.rtkit.enable = true; # Enable RTKit for low-latency audio
   
   services = {
@@ -146,9 +145,8 @@ in
       };
     };
     enableAllFirmware = true;
-    opengl = {
-      enable = true; # Enable OpenGL support
-      driSupport = true; # Enable Direct Rendering Infrastructure support
+    graphics = {
+      enable = true;
     };
   };
 
