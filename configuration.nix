@@ -84,10 +84,10 @@ in
     python3 python3Packages.pip shellcheck wdisplays git blueman brightnessctl hyprpaper
     home-manager pavucontrol alsa-utils grim bluez vscode shfmt mako slurp 
     unzip statix nixpkgs-fmt neofetch rofi libnotify waybar htop postgresql
-    insomnia docker-compose vscode slack networkmanagerapplet openfortivpn lsd helix gopls
-    go noto-fonts noto-fonts-color-emoji direnv terraform aws-sam-cli 
-    wayland wl-clipboard firefox lsof tre-command fzf ripgrep bat zip obs-studio jq
-    distrobox kitty
+    vscode networkmanagerapplet lsd helix gopls
+    go noto-fonts noto-fonts-color-emoji direnv # terraform # firefox
+    wayland wl-clipboard lsof tre-command fzf ripgrep bat zip obs-studio jq
+    kitty
     #hydra-check  #strace 
   ];
 
@@ -97,7 +97,7 @@ in
 
   programs.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    # package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
 
   # Sound and Media Configurations

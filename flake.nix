@@ -12,11 +12,12 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # Import Hyprland for the wayland compositer
-    hyprland.url = "github:hyprwm/hyprland?ref=v0.52.0";
+    hyprland.url = "github:hyprwm/hyprland"; #?ref=v0.52.0";
+    hyprland.inputs.nixpkgs.follows = "nixpkgs";  # Add this line
 
     # Import hy3: a plugin for the Hypr window manager
     hy3 = {
-      url = "github:outfoxxed/hy3?ref=hl0.52.0";
+      url = "github:outfoxxed/hy3";
       # Ensure that hy3 uses the same version of Hyprland as this Flake
       inputs.hyprland.follows = "hyprland";
     };
@@ -75,7 +76,7 @@
           wayland.windowManager.hyprland = {
             enable = true;
             # Use the hy3 plugin with Hypr
-            plugins = [ hy3.packages.x86_64-linux.hy3 ];
+            # plugins = [ hy3.packages.x86_64-linux.hy3 ];
             #recommendedEnvironment = true;
             systemd.enable = true;
             xwayland.enable = true;
