@@ -33,6 +33,7 @@ in
       efi.canTouchEfiVariables = true;
     };
     kernelPackages = pkgs.linuxPackages_latest; # Specify the Linux kernel package version
+    kernelModules = [ "uinput" ];
   };
   
   # Disable all power management related services
@@ -53,8 +54,13 @@ in
     isNormalUser = true;
     home = userConfig.homeDirectory;
     shell = pkgs.zsh; # Setting Zsh as the default shell
-    extraGroups = [ "wheel" "networkmanager" ]; # Adding the user to groups
+    extraGroups = [ "wheel" "networkmanager" "input" ];
   };
+
+  # Create udev rule for uinput access
+  services.udev.extraRules = ''
+    KERNEL=="uinput", MODE="777", GROUP="input", OPTIONS+="static_node=uinput"
+  '';
 
   # Better scheduling for CPU cycles - thanks System76!
   services.system76-scheduler.settings.cfsProfiles.enable = true;
@@ -87,7 +93,7 @@ in
     vscode networkmanagerapplet lsd helix gopls
     go noto-fonts noto-fonts-color-emoji direnv # terraform # firefox
     wayland wl-clipboard lsof tre-command fzf ripgrep bat zip obs-studio jq
-    kitty zsh-autosuggestions
+    kitty zsh-autosuggestions gnumake
     #hydra-check  #strace 
   ];
 
