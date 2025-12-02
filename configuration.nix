@@ -87,7 +87,7 @@ in
     vscode networkmanagerapplet lsd helix gopls
     go noto-fonts noto-fonts-color-emoji direnv # terraform # firefox
     wayland wl-clipboard lsof tre-command fzf ripgrep bat zip obs-studio jq
-    kitty
+    kitty zsh-autosuggestions
     #hydra-check  #strace 
   ];
 

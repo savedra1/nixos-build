@@ -185,7 +185,7 @@
     bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
     # Clipse bind 
-    bind = SUPER, V, exec, kitty --class clipse -e 'clipse'
+    bind = SUPER, V, exec, kitty --class clipse -e '/home/michael/personal-projects/clipse/clipse'
 
     # weather CLI
     bind = SUPER, W, exec, alacritty -e sh -c 'sleep 0.1; weather; sleep 1000000'

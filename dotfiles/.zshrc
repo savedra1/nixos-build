@@ -17,6 +17,15 @@ fi
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+HISTFILE=$HOME/.zhistory
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
+source /nix/store/9vjgzqbj1i9qqznrqvh4g6k5kvd89y4v-zsh-autosuggestions-0.7.1/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -35,17 +44,10 @@ plugins=(git)
 
 # Flake build alias
 alias flake-build='sudo nixos-rebuild switch --flake "$(pwd)#mySystem" && home-manager switch --flake "$(pwd)#myUser" --extra-experimental-features nix-command --extra-experimental-features flakes'
-
 # Flake update
 alias flake-update='sudo nix flake update --extra-experimental-features nix-command --extra-experimental-features flakes && flake-build'
-
 # NixOS clean
 alias nixos-clean='sudo nix-env --delete-generations old -p /nix/var/nix/profiles/system && sudo nix-collect-garbage -d && flake-build'
-
-# Forti commands
-alias run-forti='sudo openfortivpn -c /home/michael/.config/vpn --username=ovoenergy/michael.savedra --pppd-accept-remote'
-alias kill-forti='pkill openfortivpn'
-
 # Enter shell with go-based draw CLI app. Creds to https://github.com/maaslalani/draw
 alias draw='cd /home/michael/nix-shells && nix-shell draw-shell.nix --run "draw"'
 
@@ -56,11 +58,19 @@ alias weather='/home/michael/go/bin/weather'
 # Detailed ls
 alias ls='lsd'
 
+# git
+alias gs='git status'
+alias ga='git add'
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gp="git pull"
+alias gf="git fetch"
+alias gupdate="git add -A && git commit --amend --no-edit"
+
 # terraform
 alias tfi='terraform init'
-alias tfp='terraform plan'
-alias tfa='terraform apply --auto-approve'
-alias tfd='terraform destroy --auto-approve'
+alias tfp='terraform plan -out terraform.plan'
+alias tfa='terraform apply "terraform.plan"'
 alias tfsl='terraform state list'
 
 # ===============
