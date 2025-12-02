@@ -38,7 +38,11 @@
         col.active_border = rgba(5289E2ee) rgba(6897BBee) 45deg # Active border color
         col.inactive_border = rgba(595959aa) # Inactive border color
         layout = hy3                    # Layout type
-        no_cursor_warps = true          # No cursor warps
+    }
+
+    # Cursor Configuration
+    cursor {
+        no_warps = true          # No cursor warps (FIXED)
     }
 
     # Misc Configuration
@@ -73,10 +77,12 @@
             size = 3                    # Blur size
             passes = 2                  # Blur passes
         }
-        drop_shadow = true              # Enable drop shadow
-        shadow_range = 4                # Shadow range
-        shadow_render_power = 3         # Shadow render power
-        col.shadow = rgba(1a1a1aee)     # Shadow color
+        shadow {                        # FIXED: New shadow section
+            enabled = true              # Enable drop shadow
+            range = 4                   # Shadow range
+            render_power = 3            # Shadow render power
+            color = rgba(1a1a1aee)      # Shadow color
+        }
     }
     
     # Animations Configuration
@@ -93,13 +99,16 @@
 
     # Master Configuration
     master {
-        new_is_master = true                # Set new window as master
+        new_status = master
     }
 
     # Gestures Configuration
     gestures {
-        workspace_swipe = false             # Workspace swipe gesture
+    
     }
+
+    # workspace_swipe = false
+
 
     # Device Configuration
     # device:epic-mouse-v1 {
